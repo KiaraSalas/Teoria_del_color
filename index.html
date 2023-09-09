@@ -8,14 +8,67 @@
 
 </head>
 <body>
-    <h1>Seleccione el color deseado</h1>
-    <input type="color"  id="color">
-    <h2 id="hex"#000000></h2>
-    <label id="rojo">R: </label>
-    <label id="verde">G: </label>
-    <label id="azul">B: </label>
+    <div class="filas">
+        <div id="izquierda"> 
+            <div id="seleccionColor" class="divicion"> 
+                <h2>Seleccione el color deseado</h2>
+                <input type="color"  id="color">
+                <h3 id="hex">#000000</h3>
+                <label id="rojo">R: </label>
+                <label id="verde">G: </label>
+                <label id="azul">B: </label>
+            </div>
+        
+            <div class="divicion">
+                <h2>Monocromáticos</h2>
+                <div id="coloresMonocromaticos" class="filas">
+                    <div class="cuadroColor"></div>
+                    <div class="cuadroColor"></div>
+                    <div class="cuadroColor"></div>
+                </div>
+            </div>
+        
+            <div class="divicion">
+                <h2>Analogos</h2>
+                <div id="coloresAnalogos" class="filas">
+                    <div class="cuadroColor"></div>
+                    <div class="cuadroColor"></div>
+                    <div class="cuadroColor"></div>
+                    <div class="cuadroColor"></div>
+                </div>
+            </div>
+    
+        </div>
+        
+        <div id="derecha">
+            <div class="divicion">
+                <h2>Complementario</h1>
+                <div class="cuadroColor" id="cuadroC"></div>
+                <h2 id="hexComplementario"#000000></h2>
+                <label id="rojoC">R: </label>
+                <label id="verdeC">G: </label>
+                <label id="azulC">B: </label>
+            </div>
+            
+            
+            <div class="divicion">
+                <h2>Complementarios Divididos</h2>
+                <div id="coloresComplementarios" class="filas">
+                    <div class="cuadroColor"></div>
+                    <div class="cuadroColor"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+
+    
 
 
-    <script src="script.js"></script>   
+    <script src="script.js"></script>  
 </body>
 </html>
